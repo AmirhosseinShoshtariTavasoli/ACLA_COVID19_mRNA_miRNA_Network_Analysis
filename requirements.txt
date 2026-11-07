@@ -1,0 +1,10 @@
+# Exact versions are pinned only where recovered from the executed project archive.
+inmoose==0.9.1
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+networkx
+python-louvain
+patsy

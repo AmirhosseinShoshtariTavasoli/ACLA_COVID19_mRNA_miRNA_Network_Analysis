@@ -1,0 +1,16 @@
+name: gse243219-acla
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - inmoose==0.9.1
+      - numpy
+      - pandas
+      - scipy
+      - scikit-learn
+      - matplotlib
+      - networkx
+      - python-louvain
+      - patsy

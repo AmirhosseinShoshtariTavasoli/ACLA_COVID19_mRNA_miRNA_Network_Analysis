@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying manuscript and the A-CLA method paper."
+title: "ACLA_COVID19_mRNA_miRNA_Network_Analysis"
+type: software
+authors:
+  - family-names: "Shoushtari Tavasoli"
+    given-names: "Amirhossein"
+    orcid: "https://orcid.org/0009-0005-9985-1423"
+version: "1.0.0"
+date-released: "2026-11-07"
+repository-code: "https://github.com/REPLACE_WITH_USERNAME/ACLA_COVID19_mRNA_miRNA_Network_Analysis"
+keywords:
+  - COVID-19
+  - mRNA
+  - miRNA
+  - A-CLA
+  - community detection
+  - transcriptomics
+  - network biology
+  - drug repositioning
