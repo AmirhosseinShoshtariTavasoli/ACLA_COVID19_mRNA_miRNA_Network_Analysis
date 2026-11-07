@@ -1,0 +1,13 @@
+{
+  "package": "ACLA_COVID19_mRNA_miRNA_Network_Analysis",
+  "version": "1.0.0",
+  "created": "2026-11-07",
+  "included_executable_source_files": 99,
+  "authoritative_d10_source_recovered": true,
+  "d10j_exact_source_hash_verified": true,
+  "d10v_standalone_source_present": false,
+  "drug_validation_mode": "interactive AI-assisted evidence review; no local VDGEI program executed",
+  "figure_generation_mode": "no dedicated executed figure-generation script in recovered project",
+  "formal_archival_release_complete": true,
+  "blocking_note": null
+}

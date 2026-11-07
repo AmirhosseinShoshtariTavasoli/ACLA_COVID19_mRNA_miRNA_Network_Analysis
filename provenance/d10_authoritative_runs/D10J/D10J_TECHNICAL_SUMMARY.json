@@ -1,0 +1,17 @@
+{
+  "D10J_TECHNICAL_VALIDATION": "PASS",
+  "nodes": 4508,
+  "edges": 11531,
+  "communities": 8,
+  "largest_community_size": 1717,
+  "smallest_community_size": 6,
+  "singleton_communities": 0,
+  "disconnected_induced_communities": 0,
+  "wrapper_modularity": 0.5022686748930412,
+  "independent_modularity": 0.5022686748930412,
+  "modularity_abs_diff": 0.0,
+  "elapsed_seconds": 287.01083636283875,
+  "biological_interpretation_executed": "NO",
+  "signed_edge_characterization_executed": "NO",
+  "regulatory_characterization_executed": "NO"
+}

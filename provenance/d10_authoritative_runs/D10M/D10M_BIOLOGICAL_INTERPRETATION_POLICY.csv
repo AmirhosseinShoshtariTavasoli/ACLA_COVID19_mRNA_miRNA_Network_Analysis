@@ -1,0 +1,33 @@
+POLICY_ITEM,FROZEN_VALUE,RATIONALE,STATUS
+COMMUNITY_INCLUSION,ALL_8_COMMUNITIES,All eight fixed D10J communities must be analyzed and reported; no module may be omitted because its later biology is weak or uninteresting.,FROZEN
+COMMUNITY_MEMBERSHIP,IMMUTABLE_D10J_ASSIGNMENTS,"No reassignment, merging, splitting, pruning, or relabeling based on downstream biology.",FROZEN
+PRIMARY_FUNCTIONAL_QUERY,ALL_MRNA_IN_EACH_COMMUNITY,Primary functional enrichment query for each community is every mRNA assigned to that community.,FROZEN
+PRIMARY_ENRICHMENT_BACKGROUND,ALL_4467_NETWORK_MRNA,"Custom universe is all 4,467 mRNA nodes in the frozen D10L network, not the whole human genome.",FROZEN
+PRIMARY_ENRICHMENT_ORGANISM,hsapiens,Homo sapiens.,FROZEN
+PRIMARY_ENRICHMENT_SOURCES,GO:BP;REAC,Primary functional sources are Gene Ontology Biological Process and Reactome.,FROZEN
+SECONDARY_ENRICHMENT_SOURCE,KEGG,KEGG may be reported as a separately labeled secondary pathway source; it cannot determine module inclusion.,FROZEN
+ENRICHMENT_TEST,gProfiler_gGOSt_OVERREPRESENTATION,Use unordered overrepresentation analysis with a custom background.,FROZEN
+ENRICHMENT_MULTIPLE_TESTING,FDR_0.05,Use g:Profiler significance_threshold_method=fdr and user_threshold=0.05.,FROZEN
+ENRICHMENT_DOMAIN_SCOPE,custom,"Use custom statistical domain with the frozen 4,467-mRNA background.",FROZEN
+ENRICHMENT_ORDERED_QUERY,False,No ranked/ordered enrichment in the primary analysis.,FROZEN
+GO_IEA_POLICY,INCLUDE,Do not exclude IEA annotations in the primary analysis; use g:Profiler default no_iea=False.,FROZEN
+DATA_VERSION_PROVENANCE,REQUIRED,"At execution, query and save g:Profiler data_versions for hsapiens before enrichment; all module queries must use the same observed service version.",FROZEN
+DE_PRIMARY_ROLE,COV_vs_H_FDR_LE_0.05,"COVID-vs-healthy significance is a disease annotation, not a filter for primary module enrichment.",FROZEN
+DE_EFFECT_SIZE_ROLE,ABS_LOGFC_GE_1_SECONDARY_ONLY,|logFC|>=1 is secondary descriptive effect-size evidence only.,FROZEN
+SEPSIS_ROLE,COMPARATOR_NOT_EXCLUSION,P-vs-H and COV-vs-P remain comparator evidence; they do not remove nodes from modules or enrichment.,FROZEN
+COVID_SPECIFICITY,NO_SINGLE_BINARY_CLASSIFIER,"Do not invent a binary COVID-specific label. Report three frozen evidence flags: COV-vs-H significance, P-vs-H significance, and COV-vs-P significance, plus directions.",FROZEN
+REGULATORY_TARGET_ENRICHMENT,SECONDARY_ONLY,"A secondary miRNA-regulatory analysis may enrich only mRNA targets connected by the already frozen 1,978 regulatory-supported edges; no new target database expansion.",FROZEN
+REGULATORY_TARGET_BACKGROUND,ALL_MRNA_INCIDENT_TO_FROZEN_REGULATORY_EDGES,"Use all mRNAs incident to any of the 1,978 frozen regulatory edges as the regulatory-target enrichment universe.",FROZEN
+SIGNED_EDGE_ROLE,DESCRIPTIVE_ONLY,Positive/negative edge distributions characterize fixed modules but cannot alter modules or enrichment query membership.,FROZEN
+HUB_PRIMARY_METRIC,INTERNAL_TOPOLOGY_DEGREE,"Primary topological hub metric is within-community degree in the frozen 11,531-edge topology.",FROZEN
+HUB_STRATIFICATION,WITHIN_COMMUNITY_AND_NODE_TYPE,mRNA and miRNA hubs are ranked separately within each community to respect the bipartite topology.,FROZEN
+HUB_THRESHOLD,GE_90TH_PERCENTILE,Primary hub candidates are nodes at or above the 90th percentile of internal degree within the same community and node type; ties are retained.,FROZEN
+REGULATORY_HUB_METRIC,INTERNAL_REGULATORY_DEGREE,Regulatory hub evidence is reported separately using only the frozen regulatory-supported edges.,FROZEN
+DISEASE_HUB_ANNOTATION,COV_vs_H_FDR_LE_0.05,A hub can be annotated as COVID-associated when COV-vs-H FDR<=0.05; this does not change hub status.,FROZEN
+COMPOSITE_HUB_SCORE,PROHIBITED,"No post-hoc weighted composite score mixing degree, DE, regulation, enrichment, or sign evidence.",FROZEN
+MODULE_RANKING,NO_SINGLE_COMPOSITE_SCORE,All modules are reported. No post-hoc module score is used to suppress modules.,FROZEN
+NARRATIVE_PRIORITY,CONCORDANT_EVIDENCE_ONLY,"Narrative emphasis may note modules showing concordant functional enrichment, regulatory support, and COVID DE evidence, but all underlying module results remain reported.",FROZEN
+ENRICHMENT_AS_VALIDATION,NO,Functional enrichment is post-hoc biological characterization and must not be presented as independent validation of A-CLA.,FROZEN
+MODULE_STABILITY_CLAIM,NOT_AUTHORIZED,RUN_COUNT=1 was prospectively frozen; do not claim multi-seed or perturbation stability for these communities.,FROZEN
+HUB_AS_BIOMARKER_VALIDATION,NO,"Topology-derived hubs are candidates/descriptive priorities, not validated biomarkers.",FROZEN
+BIOLOGICAL_INTERPRETATION_SCOPE,CHARACTERIZATION_AND_HYPOTHESIS_GENERATION,Interpretation may generate biological hypotheses but not causal or clinical claims.,FROZEN

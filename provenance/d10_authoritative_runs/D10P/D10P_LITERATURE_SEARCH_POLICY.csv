@@ -1,0 +1,24 @@
+POLICY_ITEM,FROZEN_VALUE,RATIONALE,STATUS
+PRIMARY_LITERATURE_SOURCE,PubMed via NCBI E-utilities,Primary reproducible bibliographic source.,FROZEN
+SEARCH_CUTOFF_DATE,2026-09-07 publication date,Hard cutoff for reproducibility.,FROZEN
+PUBMED_SORT,relevance,Use ESearch relevance / Best Match ordering.,FROZEN
+PUBMED_RETMAX,50 per query,Candidate retrieval cap; no result-dependent expansion.,FROZEN
+REQUEST_RATE,<=2 requests/second,Below NCBI no-key documented limit.,FROZEN
+TOOL_PARAMETER,GSE243219_D10Q,Identify automated E-utility client.,FROZEN
+API_KEY_POLICY,OPTIONAL_NOT_REQUIRED,No API key required at <=2 requests/sec.,FROZEN
+TARGET_SCOPE,ALL_D10O_DISPLAYED_ENRICHMENT_TERMS,No manual omission.,FROZEN
+HUB_TARGET_SCOPE,TOP5_PER_COMMUNITY_PER_FROZEN_EVIDENCE_LAYER,Deterministic internal-degree selection.,FROZEN
+DISEASE_CONTEXTS,COVID19_AND_SEPSIS_SEPARATELY,Separate disease-context searches.,FROZEN
+PRIMARY_SEARCH_FIELD,Title/Abstract exact phrase,High-specificity primary query.,FROZEN
+FALLBACK_SEARCH,Unquoted Title/Abstract target,Only if primary count is zero.,FROZEN
+GENE_ALIAS_EXPANSION,PROHIBITED_IN_D10Q,Avoid target-specific flexibility.,FROZEN
+SCREENING_SCOPE,SEARCH_AND_RETRIEVAL_ONLY_IN_D10Q,No narrative in retrieval phase.,FROZEN
+NO_ABSTRACT_POLICY,METADATA_ONLY_NOT_MECHANISTIC_EVIDENCE,No mechanistic claim without accessible abstract/full text.,FROZEN
+REVIEWS_AND_ORIGINAL_STUDIES,BOTH_RETAINED,Later synthesis distinguishes evidence type.,FROZEN
+EDITORIAL_LETTER_POLICY,METADATA_ONLY_UNLESS_SUBSTANTIVE_ABSTRACT,Avoid unsupported inference.,FROZEN
+MODULE_EFFECT,LITERATURE_CANNOT_CHANGE_MODULES,No merge/split/reassignment/suppression.,FROZEN
+HUB_EFFECT,LITERATURE_CANNOT_CHANGE_FROZEN_HUB_STATUS,Contextualization only.,FROZEN
+ENRICHMENT_EFFECT,LITERATURE_CANNOT_REDEFINE_ENRICHMENT_RESULTS,No pathway re-selection.,FROZEN
+VALIDATION_LANGUAGE,CONTEXTUAL_SUPPORT_NOT_INDEPENDENT_VALIDATION,No A-CLA validation claim.,FROZEN
+CONTRADICTORY_LITERATURE,MUST_BE_RETAINED,Negative/contradictory evidence cannot be omitted.,FROZEN
+ALL_COMMUNITIES,MANDATORY,Every community remains represented.,FROZEN

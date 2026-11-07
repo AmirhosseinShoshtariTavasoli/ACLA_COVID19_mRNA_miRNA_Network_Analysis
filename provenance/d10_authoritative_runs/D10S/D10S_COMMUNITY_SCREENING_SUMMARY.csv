@@ -1,0 +1,9 @@
+community_id,screening_pairs,unique_pmids,direct_pairs,irrelevant_or_ambiguous_pairs,metadata_only_pairs,concordant_pairs,discordant_pairs,mixed_pairs,nondirectional_pairs,noncomparable_pairs
+1,586,527,443,143,0,16,4,16,215,192
+2,846,785,771,73,2,29,6,11,302,423
+3,454,326,425,28,1,0,0,3,184,238
+4,91,90,84,7,0,13,8,11,35,17
+5,36,34,31,4,1,4,3,3,13,8
+6,127,124,76,51,0,5,3,5,45,18
+7,163,77,134,29,0,8,4,12,52,58
+8,228,209,173,54,1,0,0,1,75,97

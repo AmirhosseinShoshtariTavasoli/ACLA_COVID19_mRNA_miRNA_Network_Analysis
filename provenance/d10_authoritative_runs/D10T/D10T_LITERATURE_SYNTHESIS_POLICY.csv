@@ -1,0 +1,18 @@
+POLICY_ITEM,FROZEN_VALUE,RATIONALE
+SYNTHESIS_UNIT,TARGET_DISEASE,All 374 units retained
+NARRATIVE_COMMUNITIES,ALL_8,Every community narrated
+NARRATIVE_TARGET_SELECTION,PRE_LITERATURE_D10P_CATEGORY_RANK_ONLY,Literature outcome cannot select targets
+FULL_MATRIX,ALL_187_TARGETS_X_2_DISEASE_CONTEXTS,Narrative truncation never deletes matrix rows
+EVIDENCE_SCORE,PROHIBITED,No weighted score
+VOTE_COUNTING,PROHIBITED,"Counts are descriptive, not evidence weights"
+PMID_DUPLICATION,ONE_PUBLICATION_NOT_MULTIPLE_INDEPENDENT_STUDIES,Pair mappings retained without study double-counting
+CONTRADICTION_VISIBILITY,MANDATORY,Discordant/mixed evidence surfaced for displayed targets
+ZERO_HIT_USE,NOT_NEGATIVE_BIOLOGY,Search outcome only
+NO_ABSTRACT_USE,METADATA_ONLY,No mechanistic inference
+AUTOMATED_SCREENING_DISCLOSURE,MANDATORY,D10S deterministic title/abstract classifier must be disclosed
+SYSTEMATIC_REVIEW_CLAIM,PROHIBITED,Not PRISMA/systematic review
+FULL_TEXT_REVIEW_CLAIM,PROHIBITED,No full text used
+LITERATURE_VALIDATION_LANGUAGE,PROHIBITED,No validation of A-CLA/modules/hubs
+MODULE_HUB_ENRICHMENT_EFFECT,NONE,Literature cannot change upstream results
+CAUSAL_OR_CLINICAL_CLAIM,PROHIBITED,Hypothesis-generating context only
+NEW_SEARCH_OR_ANALYSIS,PROHIBITED_IN_D10U,D10U synthesis only

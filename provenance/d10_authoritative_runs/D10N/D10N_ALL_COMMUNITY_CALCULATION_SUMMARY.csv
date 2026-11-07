@@ -1,0 +1,9 @@
+community_id,nodes_total,mrna_nodes,mirna_nodes,primary_enrichment_query_mrna,primary_GO_BP_REAC_significant_terms,secondary_KEGG_significant_terms,regulatory_target_query_mrna,secondary_regulatory_GO_BP_REAC_significant_terms,COV_vs_H_significant_nodes,P_vs_H_significant_nodes,COV_vs_P_significant_nodes,shared_directional_response_nodes,cov_associated_with_direct_sepsis_difference_nodes,primary_topological_hubs,regulatory_hub_evidence_nodes,cov_associated_hubs,large_effect_cov_hubs,cov_vs_sepsis_discriminating_hubs
+1,1717,1713,4,1713,24,2,133,6,1717,1429,454,1427,454,397,134,397,196,117
+2,814,807,7,807,26,3,35,4,814,768,203,768,203,93,36,93,67,30
+3,694,688,6,688,9,9,476,0,694,524,172,520,172,109,241,109,23,18
+4,549,537,12,537,1,0,183,0,549,388,137,384,137,68,33,68,11,8
+5,336,335,1,335,1,0,32,0,336,255,66,255,66,336,33,336,112,66
+6,287,282,5,282,0,0,4,112,287,183,115,180,115,130,5,130,64,78
+7,105,100,5,100,0,0,32,0,105,80,27,80,27,101,33,101,42,25
+8,6,5,1,5,5,1,1,6,6,3,2,3,2,6,2,6,1,2

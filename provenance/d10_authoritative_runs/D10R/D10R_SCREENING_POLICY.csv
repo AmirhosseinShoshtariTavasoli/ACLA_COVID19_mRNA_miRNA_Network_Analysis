@@ -1,0 +1,19 @@
+POLICY_ITEM,FROZEN_VALUE,RATIONALE,STATUS
+SCREENING_UNIT,QUERY_PMID_PAIR,"Each of 2,531 query-PMID pairs screened independently.",FROZEN
+UNIQUE_PMID_REUSE,ALLOWED_WITH_PAIR_SPECIFIC_LABELS,Same PMID may have different relevance for different targets/queries.,FROZEN
+ALL_PAIRS_SCREENED,MANDATORY,No manual preselection of papers.,FROZEN
+ZERO_HIT_QUERY,NOT_NEGATIVE_BIOLOGICAL_EVIDENCE,"Zero retrieval means no hit under frozen search, not absence of biology.",FROZEN
+NO_ABSTRACT_RECORD,METADATA_ONLY,No mechanistic/directional inference from the five no-abstract records.,FROZEN
+SCREENING_INFORMATION_SOURCE,TITLE_ABSTRACT_PUBMED_METADATA_ONLY,No full-text screening in D10S.,FROZEN
+FULL_TEXT_EXPANSION,PROHIBITED_IN_D10S,Would require separately versioned design.,FROZEN
+GENE_ALIAS_EXPANSION,PROHIBITED,No post-hoc search/screening alias expansion.,FROZEN
+NEW_LITERATURE_SEARCH,PROHIBITED_IN_D10S,D10S screens only D10Q retrieval universe.,FROZEN
+CONTRADICTORY_EVIDENCE,MANDATORY_RETENTION,Contradictory/negative evidence cannot be removed.,FROZEN
+REVIEW_AND_ORIGINAL_STUDIES,BOTH_RETAINED_SEPARATELY,Do not mix evidence types silently.,FROZEN
+EVIDENCE_CLASSIFICATION,PAIR_SPECIFIC,Evidence direction is assigned per target/disease query pair.,FROZEN
+CONCORDANCE_LANGUAGE,CONTEXTUAL_SUPPORT_ONLY,Never call literature concordance independent validation.,FROZEN
+MODULE_EFFECT,NONE,Screening cannot change modules.,FROZEN
+HUB_EFFECT,NONE,Screening cannot change frozen hub status.,FROZEN
+ENRICHMENT_EFFECT,NONE,Screening cannot change frozen enrichment.,FROZEN
+BIOLOGICAL_NARRATIVE,PROHIBITED_IN_D10S,D10S performs screening/classification only.,FROZEN
+ALL_8_COMMUNITIES,MANDATORY,Screening coverage remains complete across communities.,FROZEN
