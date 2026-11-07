@@ -1,0 +1,6 @@
+validated:
+  python: "3.12.3"
+  inmoose: "0.9.1"
+notes:
+  - "Other dependency versions were not recovered with sufficient confidence from the available GSE243219 archive and are intentionally not invented."
+  - "The original A-CLA execution also required a Louvain runtime dependency."

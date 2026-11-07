@@ -1,0 +1,88 @@
+project:
+  series: GSE243219
+  mrna_subseries: GSE243217
+  mirna_subseries: GSE243218
+
+cohort:
+  total_paired_subjects: 72
+  covid19: 35
+  sepsis: 22
+  healthy: 15
+
+filtering:
+  minimum_count: 10
+  minimum_total_count: 15
+  large_n: 10
+  min_prop: 0.7
+  effective_minimum_samples: 14
+
+normalization:
+  method: TMM
+  logcpm_prior_count: 2
+
+primary_differential_expression:
+  implementation: InMoose edgepy quasi-likelihood
+  inmoose_version: 0.9.1
+  fdr_threshold: 0.05
+  secondary_abs_log2fc_threshold: 1.0
+  contrasts:
+    - COV_vs_H
+    - P_vs_H
+    - COV_vs_P
+
+association:
+  primary_subjects: 50
+  covid19: 35
+  healthy: 15
+  method: disease-adjusted partial Spearman
+  abs_rho_threshold: 0.30
+  fdr_threshold: 0.05
+  bootstrap_replicates: 500
+  bootstrap_stability_threshold: 0.80
+  bootstrap_seed: 243219
+
+regulatory_evidence:
+  experimental_source: DIANA-TarBase v9
+  prediction_sources:
+    - TargetScanHuman 8.0
+    - miRDB 6.0
+  mirna_identity_source: miRBase 22.1
+  mirdb_score_threshold: 80
+  rule: experimental OR concordant TargetScan+miRDB
+
+final_network:
+  nodes: 4508
+  mrnas: 4467
+  mirnas: 41
+  edges: 11531
+  positive_edges: 5225
+  negative_edges: 6306
+  regulatory_supported_edges: 1978
+  association_only_edges: 9553
+  connected_components: 2
+
+acla:
+  representation: all-edge unweighted topology projection
+  binarize: true
+  max_iterations: 200
+  alpha0: 0.20
+  alpha_min: 0.01
+  alpha_decay: 0.95
+  global_signal_weight: 0.35
+  early_stopping_patience: 10
+  seed: 42
+  run_count: 1
+  final_communities: 8
+  global_modularity: 0.5022686749
+
+hubs:
+  definition: within-community, within-node-type internal degree percentile
+  percentile: 90
+
+enrichment:
+  primary_sources:
+    - GO:BP
+    - Reactome
+  secondary_source: KEGG
+  correction: FDR
+  significance_threshold: 0.05

@@ -1,0 +1,10 @@
+miRNA_target_resources:
+  DIANA_TarBase: "v9"
+  TargetScanHuman: "8.0"
+  miRDB: "6.0"
+  miRBase: "22.1"
+functional_resources:
+  gProfiler_data_version: "e114_eg62_p19_27110d83"
+  GO_BP_release: "2026-01-23"
+  KEGG_release: "2026-03-15"
+  Reactome_release: "2026-03-20"
